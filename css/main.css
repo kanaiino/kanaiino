@@ -1,0 +1,13 @@
+@import url(../css/properties.css);
+@import url(../css/index.css);
+@import url(../css/mylist.css);
+@import url(../css/header.css);
+
+body {
+    background: rgb(var(--color-white));
+}
+
+main {
+    width: 100%;
+    overflow: hidden;
+}

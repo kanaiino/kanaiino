@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+}
+
+:root {
+    --font-family: Montserrat, sans-serif !important;
+    --color-white: 255, 255, 255;
+    --color-light: 127, 127, 127;
+    --color-gray: 55, 55, 55;
+    --color-dgray: 27, 27, 27;
+    --color-dark: 20, 20, 20;
+    --color-black: 9, 9, 9;
+    --color-red: 110, 47, 47;
+    --color-green: 77, 98, 91;
+    --color-pink: #f2d4e0;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* BLOCK-TITLE */
+h1 {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 5rem;
+    /* 42px */
+    color: rgb(var(--color-white));
+}
+
+/* HIGH-TITLE */
+h2 {
+    font-family: var(--font-family);
+    font-weight: 900;
+    font-size: 3rem;
+    color: rgb(var(--color-white));
+}
+
+/* LOW-TITLE */
+h3 {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 1.75rem;
+    color: rgb(var(--color-white));
+}
+
+/* TEXT */
+h4{
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: rgb(var(--color-white));
+}
+
+p, a {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 1rem;
+    color: rgb(var(--color-white));
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.selectDisable {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
