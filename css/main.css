@@ -1,7 +1,7 @@
-@import url(css/properties.css);
-@import url(css/index.css);
-@import url(css/mylist.css);
-@import url(css/header.css);
+@import url(roperties.css);
+@import url(index.css);
+@import url(mylist.css);
+@import url(header.css);
 
 body {
     background: rgb(var(--color-white));
