@@ -1,0 +1,89 @@
+@import url(properties.css);
+
+.main {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+    padding: 4rem 4rem 2rem 4rem;
+    overflow: hidden;
+
+    .main-l {
+        min-width: 24rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        .list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+            padding: 1rem 2rem;
+
+            .list-title h5 {
+                color: rgb(var(--color-black));
+            }
+
+            .list-item {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0.25rem 0.5rem 0.25rem 2rem;
+                background: rgb(var(--color-black));
+                cursor: pointer;
+
+                h5 {
+                    color: rgb(var(--color-white));
+                }
+            }
+
+            .listGame {
+                position: relative;
+
+                svg {
+                    position: absolute;
+                    z-index: 0;
+                    width: 1.5rem;
+                    height: 1.5rem;
+                    top: 0.3125rem;
+                    right: 1rem;
+                    pointer-events: none;
+                    fill: rgb(var(--color-white));
+                }
+
+                .game-category {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.25rem;
+                    padding-top: 0.25rem;
+                }
+
+                .game-category,
+                input[type="checkbox"] {
+                    display: none;
+                }
+
+                input[type="checkbox"]:checked~.game-category {
+                    display: flex;
+                }
+
+                input[type="checkbox"]:checked~svg {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+    }
+
+    .main-r {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .list-title {
+            padding: 0 2rem;
+            margin-bottom: 0.5rem;
+            color: rgb(var(--color-black));
+        }
+    }
+}
